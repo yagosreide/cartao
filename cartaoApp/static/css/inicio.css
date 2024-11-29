@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(183, 179, 212);
+}
+
+header {
+    background-color: #000000; /* Header background color */
+    padding: 10px 0; /* Padding for the header */
+    text-align: center; /* Center the text in header */
+    
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display items inline */
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+}
+
+/* Main Content Styles */
+.inicio {
+    text-align: center; /* Center the welcome message */
+    margin: 20px 0; /* Margin around the welcome section */
+    color: #4c08eb;
+    padding-top: 10px;
+    padding: 10px;
+}
+
+.meio {
+    display: flex; /* flexibilidade dos blocos */
+    flex-wrap: wrap; /* Permitir que os itens passem para a próxima linha */
+    justify-content: flex-start; /* Center items horizontally */
+    margin: 0 7%; /* Margem do bloco */ 
+}
+
+.cont {
+    border: 7px solid #4c08eb; /* Borda ao redor de cada conteúdo*/
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 20px; /* margem em torno dos blocos de conteúdos */
+    padding: 10px; /* Espaço entre os blocos*/
+    width: calc(30% - 40px); /* Width calculation for responsiveness */
+    /* box-shadow: 0 2px 5px rgba(219, 7, 7, 0.1); Subtle shadow effect */
+    text-align: justify;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.cont:hover {
+    border-color: #d007eb; /* Muda a cor da borda ao passar o mouse */
+    box-shadow: 0 0 15px #d007eb(76, 111, 175, 0.7), 0 0 20px rgba(76, 175, 80, 0.5); /* Efeito de brilho */
+}
+
+
+.imagens {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    align-content: center;
+    
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cont {
+        width: calc(45% - 40px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin: 10px 0; /* Space between stacked items */
+    }
+}
+
+
+#butt{
+    color: #4c08eb;
+    background-color: azure;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+border-left-color: #d007eb;
+}
+
+
+
+.cont a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto do pai */
+    display: block; /* Faz o link ocupar todo o bloco */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px; /* Canto arredondado */
+    transition: background-color 0.3s; /* Efeito de transição para hover */
+}
